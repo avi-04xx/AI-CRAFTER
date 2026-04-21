@@ -1,7 +1,7 @@
 import { WandSparkles } from 'lucide-react'
 import { useAICrafterStore } from '../store/useAICrafterStore'
 
-function generateLocalComponent(prompt: string): string {
+function generateLocalComponent(prompt) {
   const lowerPrompt = prompt.toLowerCase()
 
   if (lowerPrompt.includes('dashboard')) {
@@ -67,7 +67,7 @@ function generateLocalComponent(prompt: string): string {
 }`
 }
 
-function improveLocalComponent(existingCode: string, improvePrompt: string): string {
+function improveLocalComponent(existingCode, improvePrompt) {
   const lowerImprovePrompt = improvePrompt.toLowerCase()
   let nextCode = existingCode
 
@@ -139,7 +139,7 @@ export function PromptPanel() {
     }
   }
 
-  function useExamplePrompt(value: string) {
+  function useExamplePrompt(value) {
     setPrompt(value)
     setStatusMessage('Example prompt added. Click Generate Component.')
   }

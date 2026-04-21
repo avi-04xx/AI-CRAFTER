@@ -8,9 +8,9 @@ export function LivePreview() {
     <section className="card">
       <h2>Live Sandbox Preview</h2>
       <Sandpack
-        template="react-ts"
+        template="react"
         files={{
-          '/App.tsx': generatedCode,
+          '/App.jsx': generatedCode,
         }}
         options={{
           editorHeight: 420,

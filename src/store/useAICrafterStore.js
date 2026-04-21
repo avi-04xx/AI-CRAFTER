@@ -1,18 +1,5 @@
 import { create } from 'zustand'
 
-type AICrafterState = {
-  prompt: string
-  improvePrompt: string
-  generatedCode: string
-  statusMessage: string
-  isLoading: boolean
-  setPrompt: (value: string) => void
-  setImprovePrompt: (value: string) => void
-  setGeneratedCode: (value: string) => void
-  setStatusMessage: (value: string) => void
-  setIsLoading: (value: boolean) => void
-}
-
 const starterCode = `export default function App() {
   return (
     <main style={{ padding: "2rem", fontFamily: "Inter, sans-serif" }}>
@@ -22,7 +9,7 @@ const starterCode = `export default function App() {
   );
 }`
 
-export const useAICrafterStore = create<AICrafterState>((set) => ({
+export const useAICrafterStore = create((set) => ({
   prompt: '',
   improvePrompt: '',
   generatedCode: starterCode,
