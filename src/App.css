@@ -1,0 +1,163 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  background: linear-gradient(120deg, #111827, #1e293b);
+  border: 1px solid #3b82f6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.15);
+}
+
+.header h1 {
+  margin: 0 0 8px;
+}
+
+.header p {
+  margin: 0;
+  color: #93a3b8;
+}
+
+.statusBar {
+  margin: 0;
+  padding: 10px 12px;
+  background: #0b1220;
+  border: 1px solid #1e3a8a;
+  border-radius: 8px;
+  color: #c7d2fe;
+}
+
+.guideCard {
+  background: #0b1220;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.guideCard h3 {
+  margin: 0 0 6px;
+}
+
+.guideCard p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.stepPills {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stepPills span {
+  font-size: 0.78rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  padding: 4px 10px;
+  background: #111827;
+  color: #bfdbfe;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 340px minmax(320px, 1fr) minmax(340px, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.card {
+  background: linear-gradient(180deg, #111827 0%, #0b1220 100%);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #475569;
+  background: #0b1220;
+  border-radius: 8px;
+  padding: 10px;
+  color: #e2e8f0;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.codeArea {
+  min-height: 460px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #eff6ff;
+  background: #1d4ed8;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.secondaryButton {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.exampleRow {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tagButton {
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 999px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
